@@ -1,0 +1,24 @@
+.home-img{
+    margin: 0 auto 5% 15%;
+    width: 220px;
+    height: 100px;
+}
+.container2 {
+	max-width: 500px;
+	margin: 0 auto;
+}
+.flex2 {
+	display: flex;
+}
+.item2 {
+    height: 150px;
+    width: 150px;
+	margin: 2px;
+	background: rgb(233, 233, 233);
+	text-align: center;
+    font-size: 1.5em;
+    
+}
+.flex-wrap2 {
+	flex-wrap: wrap;
+}
