@@ -7,6 +7,9 @@
 	margin: 0 auto 0 87%;
 	width: 50px;
 	height: 50px;
+	ion-icon{
+		font-size: 30px;
+	}
 
 }
 .home-img{
@@ -22,12 +25,15 @@
 	display: flex;
 }
 .btn-Home {
+	font-family: 'Roboto';
+	font-weight: bold;
+	text-transform: uppercase;
     height: 46%;
     width: 46%;
 	margin: 2%;
 	background: #ffffff;
 	text-align: center;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	border-radius: 10px;
 	padding-bottom: 3px;	
 	box-shadow: 2px 1px 2px 1.5px black;
@@ -50,4 +56,5 @@
     padding: 10px;
 	box-shadow: 2px 1px 2px 1.5px black;
 	color: #02245f;
+	font-size: 18px;
 }
