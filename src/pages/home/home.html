@@ -1,31 +1,20 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Pagina Inicial
-     </ion-title>
-    <ion-buttons end>
-      <button ion-button icon-only (click)="backLogin()">
-        <ion-icon name="log-out"></ion-icon>
-      </button>
-    </ion-buttons>
-    
-   </ion-navbar>
-</ion-header>
-
-<ion-content padding class="pg-home">
+<ion-content padding class="pg-home"> 
   
-  
+    <button ion-button icon-only class="btn-Sair" (click)="backLogin()">
+      <ion-icon name="log-out"></ion-icon>
+    </button>
 
   <section class="container2 flex2 flex-wrap2">
+    
     <img class="home-img" src="../assets/imgs/logo-e-Cidadao-horizontal.png" alt="Card">
     
     <div class="btn-Home" (click)="development()">
       <img class="btnImg" src="../assets/imgs/obras.png" alt="Card">
-       Buracos nas vias
+      Asfalto
     </div>
     <div class="btn-Home" (click)="development()">
       <img class="btnImg" src="../assets/imgs/iluminacao.png" alt="Card"> 
-      Falta de Iluminação
+      Iluminação
     </div>
     <div class="btn-Home" (click)="development()">
       <img class="btnImg" src="../assets/imgs/entulho.png" alt="Card">
@@ -38,5 +27,5 @@
   </section>
 
   <button ion-button icon-start block class="other" tappable (click)="development()">
-    <ion-icon name="add-circle" color="dark"></ion-icon>OUTRAS CATEGORIAS</button>
+    <ion-icon name="add-circle"></ion-icon>OUTRAS CATEGORIAS</button>
 </ion-content>

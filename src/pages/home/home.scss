@@ -3,6 +3,11 @@
 }
 .btn-Sair{
 	background: transparent !important;
+	color: red;
+	margin: 0 auto 0 87%;
+	width: 50px;
+	height: 50px;
+
 }
 .home-img{
     margin: 0 auto 5% 20%;
@@ -17,20 +22,22 @@
 	display: flex;
 }
 .btn-Home {
-    height: 45%;
-    width: 45%;
+    height: 46%;
+    width: 46%;
 	margin: 2%;
 	background: #ffffff;
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 1.4em;
 	border-radius: 10px;
-    padding: 10px;
-    box-shadow: 2px 1px 2px 1.5px rgb(49, 49, 49);
+	padding-bottom: 3px;	
+	box-shadow: 2px 1px 2px 1.5px black;
+	color: #02245f;
 }
 
 .btnImg{
-	height: 150px !important;
-	width: 150px !important;
+	height: 75% !important;
+	width: 75%  !important;
+	padding: 10px;
 }
 
 .flex-wrap2 {
@@ -41,6 +48,6 @@
 	background: #ffffff;
 	border-radius: 10px;
     padding: 10px;
-	box-shadow: 2px 1px 2px 1.5px rgb(49, 49, 49);
-	color: black;
+	box-shadow: 2px 1px 2px 1.5px black;
+	color: #02245f;
 }
