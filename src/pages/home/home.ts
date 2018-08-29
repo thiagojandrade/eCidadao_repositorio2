@@ -24,4 +24,7 @@ export class HomePage {
     alert.present();
     this.navCtrl.setRoot('HomePage');
   }
+  solicitacoes(){
+    this.navCtrl.push('SolicitacoesPage');
+  }
 }
