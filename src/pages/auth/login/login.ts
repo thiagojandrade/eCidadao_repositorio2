@@ -1,9 +1,10 @@
+import { SignupPage } from './../signup/signup';
+import { TabsPage } from './../../tabs/tabs';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {  NavController, NavParams } from 'ionic-angular';
 
 import { FormBuilder, Validators } from "@angular/forms";
 
-@IonicPage()
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html',
@@ -22,10 +23,10 @@ export class LoginPage {
     console.log('ionViewDidLoad LoginPage');
   }
   goToSignUp(){
-    this.navCtrl.push('SignupPage');
+    this.navCtrl.push(SignupPage);
   }
   efetuarlogin(){
-    this.navCtrl.setRoot('HomePage');
+    this.navCtrl.setRoot(TabsPage);
   }
 
 }
