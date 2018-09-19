@@ -1,3 +1,4 @@
+import { ListCategoriasPage } from './../pages/list-categorias/list-categorias';
 import { DetSolicitacaoPage } from './../pages/det-solicitacao/det-solicitacao';
 import { FeedPage } from './../pages/feed/feed';
 import { SignupPage } from './../pages/auth/signup/signup';
@@ -13,6 +14,8 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/auth/login/login';
 import { SolicitacoesPage } from '../pages/solicitacoes/solicitacoes';
 import { PerfilPage } from '../pages/perfil/perfil';
+import { NewSolicitacaoPage } from '../pages/new-solicitacao/new-solicitacao';
+import { ListFeedPage } from '../pages/list-feed/list-feed';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,9 @@ import { PerfilPage } from '../pages/perfil/perfil';
     FeedPage,
     PerfilPage,
     DetSolicitacaoPage,
+    NewSolicitacaoPage,
+    ListCategoriasPage,
+    ListFeedPage,
     TabsPage
   ],
   imports: [
@@ -40,6 +46,9 @@ import { PerfilPage } from '../pages/perfil/perfil';
     FeedPage,
     PerfilPage,
     DetSolicitacaoPage,
+    NewSolicitacaoPage,
+    ListCategoriasPage,
+    ListFeedPage,
     TabsPage
   ],
   providers: [

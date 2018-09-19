@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>FEED DE SOLICITAÇÕES</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-list>
+    <ion-item *ngFor="let item of items"  class="lista">
+      <ion-thumbnail item-start>
+        <img src="img/../assets/imgs/asfalto_buraco.jpg">
+      </ion-thumbnail>
+       <h2>{{ item }}</h2>
+      <p>Rua Tal</p>
+      <button ion-button clear item-end (click)="detFeed()">Detalhes</button>
+    </ion-item>
+  </ion-list>
+</ion-content>
