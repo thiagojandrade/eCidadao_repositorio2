@@ -1,13 +1,49 @@
-
 <ion-header>
 
   <ion-navbar>
-    <ion-title>NOVA SOLICITAÇÃO</ion-title>
+    <ion-title >NOVA SOLICITAÇÃO</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-
-<ion-content padding>
+<ion-content padding class="pg-new">
+  <ion-row>
+    <ion-col col-8>
+      <h4>Categoria Escolhida:</h4>
+    </ion-col>
+    <ion-col col-4>
+      <h5>Obras</h5>
+    </ion-col>
+  </ion-row> 
+  
+  <ion-row>
+    <ion-col col-10>
+      <p>Localização</p>
+    </ion-col>
+    <ion-col col-2>
+      <button ion-button class="btnLocal">
+        <ion-icon name="pin"></ion-icon>
+      </button>
+    </ion-col>    
+  </ion-row>   
+  
+  <form action="" class="formSolicitacao">
+    <ion-list >
+      <ion-item>
+        <ion-input type="text" placeholder="Logradouro"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="text" placeholder="Bairro"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="number" placeholder="CEP"></ion-input>
+      </ion-item>
+    </ion-list>
+      <img class="addImg" (click)="newSolicitacao()" src="../assets/imgs/addImagem.png" alt="Card">   
+    <button class="btnSalvar" ion-button block color="primary" tappable>
+      SALVAR <br>
+      <ion-icon name="checkmark-circle"></ion-icon>
+    </button>
+  </form>
 
 </ion-content>

@@ -1,15 +1,23 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>FEED DE SOLICITAÇÕES</ion-title>
+    <ion-title text-center>FEED DE SOLICITAÇÕES</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 <ion-content padding>
-  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
-  <ion-list>
-    <ion-item *ngFor="let item of items"  class="lista">
+  <ion-searchbar placeholder="Buscar" autocomplete="on" showCancelButton=true (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Puxe para atualizar"
+      refreshingSpinner="circles"
+      refreshingText="Carregando...">
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-list class="lista">
+    <ion-item *ngFor="let item of items" >
       <ion-thumbnail item-start>
         <img src="img/../assets/imgs/asfalto_buraco.jpg">
       </ion-thumbnail>

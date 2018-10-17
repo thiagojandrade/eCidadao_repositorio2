@@ -1,3 +1,35 @@
-page-new-solicitacao {
+.pg-new{
+    width: 100%;
+}
+p{
+    font-size: 18px;
+}
+.btnLocal{
+    width: 50px;
+    height: 50px;
+    background: transparent !important;
+    box-shadow: 1.5px 1px 1px 1px black;
 
+    ion-icon{
+        color: #02245f;
+        font-size: 25px;
+    }
+}
+.formSolicitacao{
+    margin-top: 5%;
+    ion-item{
+        font-size: 18px;
+        margin-top: 2%; 
+        border-radius: 2px;        
+    }
+}
+.addImg{
+    margin: 5% 5% 0 5% !important;
+    border-radius: 10px;
+    width: 93%;	
+	box-shadow: 2px 1px 2px 1.5px black;
+	color: #02245f;
+}
+.btnSalvar{
+    font-size: 18px;
 }

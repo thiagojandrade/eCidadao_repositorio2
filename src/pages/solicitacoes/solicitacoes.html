@@ -8,7 +8,16 @@
 
 
 <ion-content padding>
-<div class="lista">
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Puxe para atualizar"
+      refreshingSpinner="circles"
+      refreshingText="Carregando...">
+    </ion-refresher-content>
+  </ion-refresher>
+<div class="lista">  
+
   <ion-list>
     <ion-item-sliding>
       <ion-item>
@@ -16,6 +25,7 @@
           <img src="../assets/imgs/obras.png">
         </ion-avatar>
         <h2>Solicitação1</h2>
+        <p>Arraste para a esquerda para detalhes</p>
       </ion-item>    
       <ion-item-options side="right">
         <button ion-button color="primary" (click)="detalhes()">
@@ -30,6 +40,7 @@
           <img src="../assets/imgs/entulho.png">
         </ion-avatar>
         <h2>Solicitação2</h2>
+        <p>Arraste para a esquerda para detalhes</p>
       </ion-item>
       <ion-item-options side="right">
         <button ion-button color="primary" (click)="detalhes()">
@@ -44,6 +55,7 @@
           <img src="../assets/imgs/dengue.png">
         </ion-avatar>
         <h2>Solicitação3</h2>
+        <p>Arraste para a esquerda para detalhes</p>
       </ion-item>
       <ion-item-options side="right">
         <button ion-button color="primary" (click)="detalhes()">
@@ -58,6 +70,7 @@
           <img src="../assets/imgs/iluminacao.png">
         </ion-avatar>
         <h2>Solicitação4</h2>
+        <p>Arraste para a esquerda para detalhes</p>
       </ion-item>
       <ion-item-options side="right">
         <button ion-button color="primary" (click)="detalhes()">
@@ -66,118 +79,66 @@
         </button>
       </ion-item-options>
     </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item>
-        <ion-avatar item-start>
-          <img src="../assets/imgs/obras.png">
-        </ion-avatar>
-        <h2>Solicitação1</h2>
-      </ion-item>
-      <ion-item-options side="right">
-        <button ion-button color="primary" (click)="detalhes()">
-          <ion-icon name="more"></ion-icon>
-          Detalhes
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item>
-        <ion-avatar item-start>
-          <img src="../assets/imgs/entulho.png">
-        </ion-avatar>
-        <h2>Solicitação2</h2>
-      </ion-item>
-      <ion-item-options side="right">
-        <button ion-button color="primary" (click)="detalhes()">
-          <ion-icon name="more"></ion-icon>
-          Detalhes
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item>
-        <ion-avatar item-start>
-          <img src="../assets/imgs/dengue.png">
-        </ion-avatar>
-        <h2>Solicitação3</h2>
-      </ion-item>
-      <ion-item-options side="right">
-        <button ion-button color="primary" (click)="detalhes()">
-          <ion-icon name="more"></ion-icon>
-          Detalhes
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item>
-        <ion-avatar item-start>
-          <img src="../assets/imgs/iluminacao.png">
-        </ion-avatar>
-        <h2>Solicitação4</h2>
-      </ion-item>
-      <ion-item-options side="right">
-        <button ion-button color="primary" (click)="detalhes()">
-          <ion-icon name="more"></ion-icon>
-          Detalhes
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item>
-        <ion-avatar item-start>
-          <img src="../assets/imgs/obras.png">
-        </ion-avatar>
-        <h2>Solicitação1</h2>
-      </ion-item>
-      <ion-item-options side="right">
-        <button ion-button color="primary" (click)="detalhes()">
-          <ion-icon name="more"></ion-icon>
-          Detalhes
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item>
-        <ion-avatar item-start>
-          <img src="../assets/imgs/entulho.png">
-        </ion-avatar>
-        <h2>Solicitação2</h2>
-      </ion-item>
-      <ion-item-options side="right">
-        <button ion-button color="primary" (click)="detalhes()">
-          <ion-icon name="more"></ion-icon>
-          Detalhes
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item>
-        <ion-avatar item-start>
-          <img src="../assets/imgs/dengue.png">
-        </ion-avatar>
-        <h2>Solicitação3</h2>
-      </ion-item>
-      <ion-item-options side="right">
-        <button ion-button color="primary" (click)="detalhes()">
-          <ion-icon name="more"></ion-icon>
-          Detalhes
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item>
-        <ion-avatar item-start>
-          <img src="../assets/imgs/iluminacao.png">
-        </ion-avatar>
-        <h2>Solicitação4</h2>
-      </ion-item>
-      <ion-item-options side="right">
-        <button ion-button color="primary" (click)="detalhes()">
-          <ion-icon name="more"></ion-icon>
-          Detalhes
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
+  <ion-item-sliding>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="../assets/imgs/obras.png">
+      </ion-avatar>
+      <h2>Solicitação1</h2>
+      <p>Arraste para a esquerda para detalhes</p>
+    </ion-item>
+    <ion-item-options side="right">
+      <button ion-button color="primary" (click)="detalhes()">
+        <ion-icon name="more"></ion-icon>
+        Detalhes
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+  <ion-item-sliding>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="../assets/imgs/entulho.png">
+      </ion-avatar>
+      <h2>Solicitação2</h2>
+      <p>Arraste para a esquerda para detalhes</p>
+    </ion-item>
+    <ion-item-options side="right">
+      <button ion-button color="primary" (click)="detalhes()">
+        <ion-icon name="more"></ion-icon>
+        Detalhes
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+  <ion-item-sliding>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="../assets/imgs/dengue.png">
+      </ion-avatar>
+      <h2>Solicitação3</h2>
+      <p>Arraste para a esquerda para detalhes</p>
+    </ion-item>
+    <ion-item-options side="right">
+      <button ion-button color="primary" (click)="detalhes()">
+        <ion-icon name="more"></ion-icon>
+        Detalhes
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+  <ion-item-sliding>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="../assets/imgs/iluminacao.png">
+      </ion-avatar>
+      <h2>Solicitação4</h2>
+      <p>Arraste para a esquerda para detalhes</p>
+    </ion-item>
+    <ion-item-options side="right">
+      <button ion-button color="primary" (click)="detalhes()">
+        <ion-icon name="more"></ion-icon>
+        Detalhes
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
   </ion-list>
 </div>
 </ion-content>
